@@ -208,6 +208,16 @@ html{scroll-padding-top:105px}
 .with-photo .category-count{display:block;margin-top:14px}
 @media(max-width:790px){.menu-category-head.with-photo{grid-template-columns:minmax(0,1fr) 180px;gap:20px}.category-photo{width:180px}.category-photo img{height:130px}}
 @media(max-width:580px){.menu-category-head.with-photo{grid-template-columns:1fr;gap:18px}.category-photo{width:100%;justify-self:stretch}.category-photo img{height:190px}.category-photo.chicken img{height:180px;padding:14px}.category-photo figcaption{text-align:left}}
+
+/* La identidad de Monreal se muestra completa, sin recortes ni distorsión. */
+.hero.hero-branded{background:radial-gradient(ellipse at 80% 40%,#382c18 0,transparent 55%),#17110e}
+.hero-branded .hero-inner{grid-template-columns:.85fr 1.15fr;gap:48px;min-height:640px}
+.hero-branded .hero-art{height:auto;align-self:center;padding:44px 0;min-width:0}
+.hero-branded .hero-art::before{display:none}
+.hero-branded .hero-art img{width:100%;height:auto;max-width:none;aspect-ratio:3/2;object-fit:contain;border-radius:12px;transform:none;filter:none;background:#090907;box-shadow:0 24px 70px #0008;border:1px solid #dfb66833}
+.hero-branded h1{font-size:clamp(60px,6vw,88px)}
+@media(max-width:1100px){.hero-branded .hero-inner{gap:28px;grid-template-columns:1fr 1.1fr}.hero-branded h1{font-size:clamp(54px,6vw,72px)}}
+@media(max-width:800px){.hero-branded .hero-inner{grid-template-columns:1fr;gap:0}.hero-branded .hero-art{grid-row:1;padding:32px 0 0;width:100%;max-width:560px;justify-self:center}.hero-branded .hero-copy{padding:32px 0 45px}.hero-branded h1{font-size:clamp(54px,10vw,76px);margin-top:20px}.hero-branded .hero-detail{margin-top:32px}}
 </style>
 </head>
 <body>
@@ -220,11 +230,11 @@ html{scroll-padding-top:105px}
 <div class="mobile-menu" id="mobile-menu"><a href="#carta">Carta completa</a><a href="#promociones">Promociones</a><a href="#ubicacion">Dónde estamos</a><a href="https://wa.me/593984045038?text=Hola%2C%20quisiera%20consultar%20la%20carta%20de%20Pizzer%C3%ADa%20Monreal." rel="noopener" target="_blank">Consultar por WhatsApp ↗</a></div>
 </div></header>
 <main>
-<section class="hero" id="inicio"><div class="wrap hero-inner">
+<section class="hero hero-branded" id="inicio"><div class="wrap hero-inner">
 <div class="hero-copy"><span class="kicker hero-kicker">Pizzas &amp; pollos · Riobamba</span><h1>El antojo<br/>tiene nombre.<br/><em>Monreal.</em></h1><p>El plan de siempre, con todo lo que se te antoja: pizzas, pollo bross y combos para compartir. Explora nuestra carta con precios y variedades, y consulta al local por WhatsApp.</p><div class="hero-buttons"><a class="button cream" href="#carta">Ver la carta  ↗</a><a class="button outline" href="#ubicacion">Visítanos  ↗</a></div>
 <div class="hero-detail"><div><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><div><b>Atención todos los días</b><small>Desde las 11 de la mañana*</small></div></div><div><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><div><b>Estamos en Riobamba</b><small>Av. La Prensa y Veloz</small></div></div></div>
 </div>
-<div class="hero-art"><img alt="Pizza recién horneada con queso y vegetales, fotografía ilustrativa" fetchpriority="high" src="assets/fotos/pizza-pepperoni.jpg"/><div class="stamp"><span>PARA EL</span><b>buen<br/>antojo</b><span>DE SIEMPRE</span></div><div class="hero-caption">Fotografía de portada referencial</div></div>
+<div class="hero-art"><img alt="Pizzería Monreal · Pizzas &amp; Pollos, logo con pizza y pollo mascota" decoding="async" fetchpriority="high" height="1024" src="assets/logo-monreal.png" width="1536"/></div>
 </div></section>
 <div class="ribbon"><div class="wrap ribbon-inner"><span>Hecho para compartir</span><i aria-hidden="true">✳</i><b>Pizzas &amp; Pollos Monreal</b><i aria-hidden="true">✳</i><span>Riobamba · Ecuador</span></div></div>
 <section class="food-menu read-only-menu" id="carta"><div class="wrap">
